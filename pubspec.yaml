@@ -1,0 +1,14 @@
+name: hello_dart
+version: 0.3.3
+description: A visual and playful introduction to programming with the Dart language.
+homepage: https://code.makery.ch/library/hello-dart/
+documentation: https://github.com/marcojakob/hello-dart
+environment:
+  sdk: '>=2.0.0 <3.0.0'
+dependencies:
+  collection: ^1.14.12
+  stagexl: ^1.4.4
+  string_scanner: ^1.0.5
+dev_dependencies:
+  build_runner: ^1.9.0
+  build_web_compilers: ^2.9.0
