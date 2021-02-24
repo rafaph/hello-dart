@@ -6,7 +6,10 @@ class MyPlayer extends Player {
   /// Your program.
   start() {
     while (canMove()) {
-      
+      if (treeRight() || treeLeft()) {
+        putStar();
+      }
+      move();
     }
   }
 }

@@ -22,6 +22,9 @@ class MyPlayer extends Player {
     turnRight();
     move();
     move();
+    while(treeRight()) {
+      move();
+    }
     turnRight();
     move();
     turnLeft();
@@ -30,5 +33,5 @@ class MyPlayer extends Player {
 
 
 main() {
-  createWorld('scenario-a.txt', MyPlayer());
+  createWorld('scenario-b.txt', MyPlayer());
 }

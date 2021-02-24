@@ -6,10 +6,13 @@ class MyPlayer extends Player {
   /// Your program.
   start() {
     move();
-    goAroundTree();
-    goAroundTree();
-    move();
-    goAroundTree();
+    while(!onStar()) {
+      if (treeFront()) {
+        goAroundTree();
+      } else {
+        move();
+      }
+    }
     removeStar();
   }
 
@@ -27,5 +30,5 @@ class MyPlayer extends Player {
 
 
 main() {
-  createWorld('scenario-a.txt', MyPlayer());
+  createWorld('scenario-c.txt', MyPlayer());
 }
