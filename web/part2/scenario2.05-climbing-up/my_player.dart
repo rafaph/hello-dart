@@ -5,6 +5,17 @@ class MyPlayer extends Player {
 
   /// Your program.
   start() {
+    turnLeft();
+    while(canMove()) {
+      oneStepUp();
+    }
+  }
+
+  oneStepUp() {
+    move();
+    turnRight();
+    move();
+    turnLeft();
   }
 }
 

@@ -5,7 +5,9 @@ class MyPlayer extends Player {
 
   /// Your program.
   start() {
-
+    while(!onStar()) {
+      move();
+    }
   }
 }
 

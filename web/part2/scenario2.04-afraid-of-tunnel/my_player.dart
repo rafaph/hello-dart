@@ -5,6 +5,10 @@ class MyPlayer extends Player {
 
   /// Your program.
   start() {
+    while(!treeLeft() || !treeRight()) {
+      move();
+    }
+    say('AHHHH! This looks very dark in here!');
   }
 }
 
